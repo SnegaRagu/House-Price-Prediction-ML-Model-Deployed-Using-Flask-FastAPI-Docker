@@ -1,0 +1,14 @@
+python
+pandas
+numpy
+joblib
+json
+flask
+fastapi
+uvicorn
+starlette
+pydantic
+scikit-learn
+xgboost
+docker
+wsl

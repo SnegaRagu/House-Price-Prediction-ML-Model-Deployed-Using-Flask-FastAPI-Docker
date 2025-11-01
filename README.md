@@ -39,16 +39,29 @@ The House Price Prediction project focuses on predicting real estate prices usin
 > Created 2 GET routes, one for home page and other for Model info page.
 > Created POST route to evaluate and predict the house price of any given input features for 4 models mentioned above using Flask.
 > Tested results using Postman and displayed results in JSON format.
+> Directory structure of Flask API
 
-house-price-flaskapi-app/
-├── app.py
-├── models/
-│   ├── RandomForest.pkl
-│   ├── linear_regression.pkl
-│   ├── polynomial_regression.pkl
-│   ├── XGBoost.pkl
-├── requirements.txt
-├── custom_functions.py
+  house-price-flaskapi-app/
+  
+  ├── app.py
+  
+  ├── models/
+  
+  │   ├── RandomForest.pkl
+  
+  │   ├── linear_regression.pkl
+  
+  │   ├── polynomial_regression.pkl
+  
+  │   ├── XGBoost.pkl
+  
+  ├── requirements.txt
+  
+  ├── custom_functions.py
+
+> To run Flask API, run as below inside Flask API directory
+
+> python app.py
 
 ### 6. Building FastAPI and Containerize with Docker
 
@@ -56,6 +69,7 @@ house-price-flaskapi-app/
 > Created POST route to evaluate and predict the house price of any given input features for 4 models mentioned above using FastAPI.
 > Containerized the entire app data into docker by copying local files into container, installing necessary dependencies and starting FastAPI inside the container.
 > Running the Docker container gives interactive web browser with model prediction prices.
+> Directory structure of FastAPI
 
   house-price-fastapi-app/
   
@@ -83,5 +97,13 @@ house-price-flaskapi-app/
   
   ├── Dockerfile
 
+To run FastAPI only,  run as below inside Flask API directory
 
+> uvicorn app.main:app --reload
+> Accessible at http://127.0.0.1:8000/docs --> Swagger UI (interactive API tester)
 
+To run Docker install wsl and Docker Desktop and follow the below steps in flaskapi root directory:
+
+> 1. Rebuilding Docker image >>>>> docker build -t house-price-app .
+> 2. Run Docker Container    >>>>> docker run -d -p 8000:8000 house-price-app
+> 3. Access at               >>>>> http://localhost:8000/docs

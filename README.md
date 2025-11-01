@@ -71,3 +71,16 @@ house-price-flaskapi-app/
   ├── requirements.txt
   ├── Dockerfile
 
+  ├── app/
+│ ├── main.py
+│ ├── utils.py
+│ ├── schema.py
+│ ├── model.py
+├── models/
+│ ├── RandomForest.pkl
+│ ├── linear_regression.pkl
+│ ├── polynomial_regression.pkl
+│ ├── XGBoost.pkl
+├── requirements.txt
+├── Dockerfile
+

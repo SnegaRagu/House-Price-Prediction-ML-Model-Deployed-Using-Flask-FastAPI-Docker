@@ -57,17 +57,17 @@ house-price-flaskapi-app/
 > Containerized the entire app data into docker by copying local files into container, installing necessary dependencies and starting FastAPI inside the container.
 > Running the Docker container gives interactive web browser with model prediction prices.
 
-house-price-fastapi-app/
-├── app/
-│   ├── main.py
-│   ├── utils.py
-│   ├── schema.py
-│   ├── model.py
-├── models/
-│   ├── RandomForest.pkl
-│   ├── linear_regression.pkl
-│   ├── polynomial_regression.pkl
-│   ├── XGBoost.pkl
-├── requirements.txt
-├── Dockerfile
+  house-price-fastapi-app/
+  ├── app/
+  │   ├── main.py
+  │   ├── utils.py
+  │   ├── schema.py
+  │   ├── model.py
+  ├── models/
+  │   ├── RandomForest.pkl
+  │   ├── linear_regression.pkl
+  │   ├── polynomial_regression.pkl
+  │   ├── XGBoost.pkl
+  ├── requirements.txt
+  ├── Dockerfile
 
